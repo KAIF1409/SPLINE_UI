@@ -1,0 +1,157 @@
+/* General Toolbar Layout */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1e1e1e; /* Dark background for consistency */
+}
+
+.toolbar-left, .toolbar-center, .toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Search Bar */
+.toolbar-search {
+  padding-left: 36px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  width: 200px;
+}
+
+/* Search Icon Styling */
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #888888;
+  font-size: 14px;
+}
+
+/* Base Button Styles */
+.toolbar-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+/* Button Colors and Hover Effects */
+.home-button {
+  background-color: #303030; /* Slightly lighter background */
+}
+.home-button:hover {
+  background-color: #444444; /* Darker hover effect */
+}
+
+.new-folder-button {
+  background-color: #404040;
+}
+.new-folder-button:hover {
+  background-color: #555555;
+}
+
+.import-button {
+  background-color: #8000ff; /* Purple button */
+}
+.import-button:hover {
+  background-color: #6400c8; /* Darker purple */
+}
+
+.generate-button {
+  background-color: #ba55d3; /* Light purple button */
+}
+.generate-button:hover {
+  background-color: #9646aa; /* Darker light purple */
+}
+
+.new-file-button {
+  background-color: #00a2ff; /* Bright blue button */
+}
+.new-file-button:hover {
+  background-color: #0078be; /* Darker blue */
+}
+
+/* Import Dialog */
+.import-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  width: 580px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.import-dialog h3 {
+  color: #ffffff;
+  margin: 0 0 24px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Import and AI Option Grids */
+.import-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* Import and AI Cards */
+.import-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: center;
+  min-height: 90px;
+}
+
+.import-card:hover {
+  background-color: #333333;
+}
+
+/* Import Format */
+.import-format {
+  color: #888888;
+  font-size: 11px;
+}
+
+.ai-badge {
+  background-color: #8a2be2;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 4px;
+}

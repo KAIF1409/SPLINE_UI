@@ -1,0 +1,90 @@
+.workspace {
+    flex: 1;
+    background-color: #ffd4d4;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .room {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .room-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(45deg);
+  }
+  
+  .wall {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb6c1;
+  }
+  
+  .wall-left {
+    transform: rotateY(90deg) translateZ(-200px);
+  }
+  
+  .wall-right {
+    transform: translateZ(-200px);
+  }
+  
+  .floor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc0cb;
+    transform: rotateX(90deg) translateZ(200px);
+  }
+  
+  .rug {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: #ffe4b5;
+    border-radius: 50%;
+    left: 20%;
+    top: 20%;
+  }
+  
+  .controls {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .control-button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .view-controls {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .view-button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .view-button.active {
+    background-color: #0066ff;
+  }
